@@ -1,32 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Final</title>
-    <!-- Enlace con el CSS -->
-    <link rel="stylesheet" href="css/estilos_fmobile">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proyecto Final</title>
+        <!-- Enlace con el CSS -->
+        <link rel="stylesheet" href="css/normalize.css"> <!--  normalizada -->
+        <link rel="stylesheet" href="css/estilos_mobile.css">
+        <link rel="stylesheet" media="screen and (min-device-width: 768px)"
+            href="css/estilos_ipad.css">
+        <link rel="stylesheet" media="screen and (min-device-width: 768px)"
+            href="css/estilos_monitor.css">
+    </head>
+    <body>
 
-<!-- menu -->
-    <nav>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-    </nav>
-    
-<!-- Contenido -->
-    <section>
-        <h3></h3> <!--  Un seleccionable del menu -->
+        <!-- menu -->
+        <div id="cabecera">
+            <div id="menu">
+                <nav id="desplegable">
+                    <a href=""><h4>Destrozos</h4></a>
+                    <a href=""><h4>Diario de todo</h4></a>
+                    <a href=""><h4>En primavera</h4>
+                        <a href="contacto.html"><h4>Contacto</h4></a>
+                    </nav>
+                </div>
+            </div>
 
-        <div> <!--  imagenes del seleccionable -->
+            <!-- Contenido -->
+            <section>
+                <h3>DESTROZOS</h3> <!--  Un seleccionable del menu -->
 
-        </div>
-    </section>
+                <div id="galeria"> <!--  imagenes del seleccionable -->
+                    <img
+                        src="recursos/imagenes/Destrozos/5303_reducida_2255.jpg">
+                    <img
+                        src="recursos/imagenes/Destrozos/04_reducida_2255_.jpg">
+                    <img src="recursos/imagenes/Destrozos/05_reducida_2255.jpg">
+                    <img src="recursos/imagenes/Destrozos/07_reducida_2255.jpg">
+                    <img src="recursos/imagenes/Destrozos/08_reducida_2255.jpg">
+                    <img src="recursos/imagenes/Destrozos/09_reducida_2255.jpg">
+                    <img src="recursos/imagenes/Destrozos/12_reducida_255.jpg">
+                </div>
+            </section>
+            <footer id="footer_contactos">
+                <div id="iconos">
+                    <a href="https://www.instagram.com/verlassco/?hl=es"><img
+                            class="redes"
+                            src="recursos/icono/circle-user-regular.svg">VERLASCO</a>
+                    <a href=""><img class="redes"
+                            src="recursos/icono//envelope-regular.svg">@xxxxxxxxxxxx</a>
+                    <a href=""><img class="redes"
+                            src="recursos/icono/phone-solid.svg">+34 777777777</a>
+                </div>
 
-</body>
-</html>
+            </footer>
+        </body>
+    </html>

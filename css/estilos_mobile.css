@@ -1,7 +1,130 @@
 /*  Hoja de estilos para movil */
-
-/* importar hoja de estilos normalizada */
+@media screen and (min-width:375px) and (max-width: 760px){
 
 /* reglas generales */
 
-/* reglas especificas */
+
+@font-face {
+    /* Nombre que le doy a la fuente a la hora de invocarla en los estilos */
+        font-family:"cuerpo";
+    /* Ruta hasta el archivo ttf (fuente que quiero utilizar) */
+        src: url(../recursos/texto/inconsolata/Inconsolata/Inconsolata-Regular.ttf);
+    }
+ @font-face {
+        /* Nombre que le doy a la fuente a la hora de invocarla en los estilos */
+            font-family:"titulos";
+        /* Ruta hasta el archivo ttf (fuente que quiero utilizar) */
+            src: url(../recursos/texto/inconsolata/Inconsolata_Expanded/Inconsolata_Expanded-ExtraBold.ttf);
+        }
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    max-width: 120rem;
+    width: 95%;
+    margin: 0 auto;
+}
+
+body {
+
+    font-family: cuerpo;
+    font-size: 1.6rem;
+    line-height: 1.8
+}
+
+p {
+    color: #000;
+    font-size: 2rem
+}
+
+a {
+    text-decoration: none
+}
+
+/* cabecera*/
+#cabecera{
+    background-color: rgb(255, 238, 214);
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+/* Menu */
+
+#boton{
+    border-style: none;
+    font-size: 2.5rem;
+    background-color: transparent;
+}
+
+#desplegable{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+a:hover{
+    color: blue;
+
+}
+
+
+/* Galeria */
+section h3{
+    text-align: center;
+    margin: 0.5rem;
+    font-family: titulos;
+}
+
+#galeria{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+img{
+
+    height: 100%;
+    width: 96%;
+    padding: 1rem;
+    margin: auto
+
+}
+
+/* PAGINA CONTACTOS */
+
+#section_contactos{
+    padding: 1em;
+}
+
+#footer_contactos{
+    padding: 3em;
+    background: rgb(25, 25, 27);
+}
+
+#footer_contactos{
+    padding: 2em;
+    background: rgb(25, 25, 27);
+}
+
+#iconos{
+    display: flex;
+    flex-direction: column;
+}
+
+.redes{
+
+    position: relative;
+    top: 1.7em;
+    height: 100%;
+    width: 10%;
+}
+
+#iconos a {
+    color:rgb(255, 255, 255);
+    text-align: center;
+}
+
+
+}

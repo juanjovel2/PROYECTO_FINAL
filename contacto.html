@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proyecto Final</title>
+        <!-- Enlace con el CSS -->
+        <link rel="stylesheet" href="css/normalize.css"> <!--  normalizada -->
+        <link rel="stylesheet" href="css/estilos_mobile.css">
+        <link rel="stylesheet" media="screen and (min-device-width: 768px)"
+            href="css/estilos_ipad.css">
+        <link rel="stylesheet" media="screen and (min-device-width: 768px)"
+            href="css/estilos_monitor.css">
+    </head>
+    <body>
+
+        <!-- menu -->
+        <div id="cabecera">
+            <div id="menu">
+                <nav id="desplegable">
+                    <a href="index.html"><h4>Destrozos</h4></a>
+                    <a href=""><h4>Diario de todo</h4></a>
+                    <a href=""><h4>En primavera</h4>
+                    <a href="contacto.html"><h4>Contacto</h4></a>
+                    </nav>
+                </div>
+            </div>
+
+            <section id="section_contactos">
+
+            <div id="caja_contactos">
+                <label for="Nombre"><strong>Nombre y Apellidos</strong></label><br>
+                <input type="texto" id="nombre" name="nombre"
+                    placeholder="Nombre y apellidos" autofocus required><br>
+                <label for="telefono"><strong>Teléfono</strong></label><br>
+                <input type="text" id="telefono" name="telefono"
+                    placeholder="Teléfono" required><br>
+
+                <label for="correo"><strong>Email</strong></label><br>
+                <input type="text" id="correo" name="correo" placeholder="email"
+                    required><br>
+
+                <p><strong>¿Que necesitas?</strong></p>
+                <p><textarea rows="4" cols="40" placeholder="------"></textarea></p>
+                
+                <input type="submit" id="envia" value="Enviar!">
+                <input type="reset" id="cancela" name="reset" value="Borrar datos">
+            </div>
+
+
+
+            </section>
+
+            <footer id="footer_contactos">
+            <div id="iconos">
+                <a href="https://www.instagram.com/verlassco/?hl=es"><img class="redes" src="recursos/icono/circle-user-regular.svg">VERLASCO</a>
+
+                <a href=""><img class="redes" src="recursos/icono//envelope-regular.svg">@xxxxxxxxxxxx</a>
+                
+                <a href=""><img class="redes" src="recursos/icono/phone-solid.svg">+34 777777777</a>
+            </div>
+
+            </footer>
+
+
+
+        </body>
