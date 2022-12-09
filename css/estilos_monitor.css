@@ -39,7 +39,7 @@
             
             a {
                 text-decoration: none;
-                color:#000;
+                padding: 1rem;
             }
     
     /* cabecera*/
@@ -66,13 +66,13 @@
         justify-content: flex-end;
     }
 
-    a{
-        padding: 1rem;
 
+    a:visited{
+        color: rgb(150, 150, 149);
     }
     
     a:hover{
-        color: blue;
+        color: rgb(0, 0, 0);
     
     }
     
@@ -101,6 +101,28 @@
     
     }
 
+    #footer_contactos{
+        padding: 2em;
+        background: rgb(38, 38, 39);
+    }
+    
+    #iconos{
+        position: relative;
+        bottom: 1em;
+    }
+    
+    .redes{
+    
+        position: relative;
+        top: 0.8em;
+        height: 100%;
+        width: 2.5%;
+    }
+    
+    #iconos a {
+        color:rgb(255, 255, 255);
+    }
+    
     /* PAGINA CONTACTOS */
 
 #section_contactos{
@@ -117,26 +139,7 @@
     background-color: rgb(196, 196, 196);
 }
 
-#footer_contactos{
-    padding: 2em;
-    background: rgb(25, 25, 27);
-}
 
-#iconos{
-    position: relative;
-    bottom: 1em;
-}
 
-.redes{
-
-    position: relative;
-    top: 0.8em;
-    height: 100%;
-    width: 2.5%;
-}
-
-#iconos a {
-    color:rgb(255, 255, 255);
-}
 
 }
