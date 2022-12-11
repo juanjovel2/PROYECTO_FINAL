@@ -42,10 +42,10 @@
 
 /* cabecera*/
 #cabecera{
-    background-color: rgb(255, 238, 214);
+    background-image: url("../recursos/imagenes/cabecera.png");
+    opacity: 0.9;
     display: flex;
     flex-direction: column;
-
 
 }
 
@@ -63,19 +63,21 @@
     flex-direction: column;
 }
 
-a:visited{
-    color: rgb(150, 150, 149);
+#desplegable a:visited{
+    color: rgb(255, 255, 255);
 }
 
-a:hover{
+#desplegable a:hover{
     color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
 
 }
 
         /* Galeria */
-section h3{
+
+section h2{
     text-align: center;
-    margin: 0.5rem;
+    margin: 0.8em;
     font-family: titulos;
 }
 
@@ -88,15 +90,29 @@ section h3{
 img{
 
     height: 100%;
-    width: 46%;
+    width: 42%;
     padding: 1em;
     margin: auto;
 
 }
 
-#footer_contactos{
+#galeria img:hover{
+    /* aumento las imagenes cuando esta el raton encima */
+    transition: 1s;
+    width: 47%;
+    height: 100%;
+}
+
+/* pie de pagina */
+
+footer{
     padding: 2em;
     background: rgb(38, 38, 39);
+}
+footer p{
+    color: #fff;
+    font-size: 0.8em;
+    margin-bottom: 0em;
 }
 
 #iconos{
@@ -110,7 +126,7 @@ img{
 .redes{
 
     position: relative;
-    top: 3em;
+    top: 3.5em;
     height: 100%;
     width: 15%;
 }
@@ -121,15 +137,74 @@ img{
     bottom: 5em;
 }
 
+/* PAGINA QUIEN SOY */
 
-/* PAGINA CONTACTOS */
+#cuerpo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 
-#section_contactos{
+}
+
+#izquierda_texto{
+    height: 100%;
+    width: 96%;
+    padding: 1rem;
+    margin: auto;
+    text-align: justify;
+
+}
+
+#derecha_foto{
+    height: 100%;
+    width: 96%;
+    padding: 1rem;
+    margin: auto;
+    margin-bottom: 47em;
+
+}
+#derecha_foto img{
+    height: 100%;
+    width: 100%;
     padding: 1em;
-    text-align: center;
-    background-color: rgb(196, 196, 196);
+    margin: auto;
 }
 
 
+/* PAGINA CONTACTOS */
+
+
+#textarea{
+    margin-top: 0.2em;
+    }
+    
+    #section_contactos{
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #izquierda{
+        padding: 1em;
+        margin: auto;
+        text-align: justify;
+        border-bottom-color:rgb(77, 77, 77) ;
+        border-bottom-style: solid;
+        border-bottom-width: 0.1em;
+    }
+    
+    #derecha{
+        padding: 1rem;
+        margin: auto;
+        text-align: justify;
+    
+    }
+    
+    #derecha p{
+        font-size: 1em;
+        margin-bottom: 0em;
+        margin-top: 0.2em;
+    }
+    
 
 }

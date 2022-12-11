@@ -44,7 +44,8 @@ a {
 
 /* cabecera*/
 #cabecera{
-    background-color: rgb(255, 238, 214);
+    background-image: url("../recursos/imagenes/cabecera.png");
+    opacity: 0.9;
     display: flex;
     flex-direction: column;
 
@@ -64,21 +65,32 @@ a {
     display: flex;
     flex-direction: column;
 }
-a:visited{
-    color: rgb(150, 150, 149);
+#desplegable a:visited{
+    color: rgb(255, 255, 255);
 }
 
-a:hover{
+#desplegable a:hover{
     color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
 
 }
 
 
 /* Galeria */
-section h3{
+
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+section h2{
     text-align: center;
-    margin: 0.5rem;
+    margin: 0.8em;
     font-family: titulos;
+    
 }
 
 #galeria{
@@ -89,14 +101,22 @@ section h3{
 
 img{
 
-    height: 100%;
+    height: 13%;
     width: 96%;
     padding: 1rem;
     margin: auto
 
 }
 
-#footer_contactos{
+/* Pie de pagina */
+
+footer p{
+    color: #fff;
+    font-size: 0.8em;
+    margin-bottom: 0em;
+}
+
+footer{
     padding: 2em;
     background: rgb(38, 38, 39);
 }
@@ -109,22 +129,73 @@ img{
 .redes{
 
     position: relative;
-    top: 1.7em;
     height: 100%;
     width: 10%;
+    top: 1.6em;
 }
 
 #iconos a {
     color:rgb(255, 255, 255);
     text-align: center;
 }
+/* PAGINA QUIEN SOY */
+#cuerpo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+#izquierda_texto{
+    height: 100%;
+    width: 96%;
+    padding: 1rem;
+    margin: auto;
+    text-align: justify;
+
+}
+
+#derecha_foto{
+    height: 100%;
+    width: 96%;
+    padding: 1rem;
+    margin: auto;
+
+}
 
 
 /* PAGINA CONTACTOS */
 
-#section_contactos{
-    padding: 1em;
+#textarea{
+margin-top: 0.2em;
 }
 
+#section_contactos{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#izquierda{
+    padding: 1em;
+    margin: auto;
+    text-align: justify;
+    border-bottom-color:rgb(77, 77, 77) ;
+    border-bottom-style: solid;
+    border-bottom-width: 0.1em;
+}
+
+#derecha{
+    padding: 1rem;
+    margin: auto;
+    text-align: justify;
+
+}
+
+#derecha p{
+    font-size: 1em;
+    margin-bottom: 0em;
+    margin-top: 0.2em;
+}
 
 }
