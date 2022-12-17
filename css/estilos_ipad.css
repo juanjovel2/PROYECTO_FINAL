@@ -1,7 +1,7 @@
 /*  Hoja de estilos para ipad */
 
 @media screen and (min-width: 760px) and (max-width: 1425px) {
-/* reglas generales */
+/* REGLAS GENERALES */
 
 @font-face {
     /* Nombre que le doy a la fuente a la hora de invocarla en los estilos */
@@ -37,10 +37,11 @@
         }
         
         a {
-            text-decoration: none
+            text-decoration: none;
+            color: rgb(255, 255, 255);
         }
 
-/* cabecera*/
+/* ---------------------------CABECERA*/
 #cabecera{
     background-image: url("../recursos/imagenes/cabecera.png");
     opacity: 0.9;
@@ -49,7 +50,7 @@
 
 }
 
-/* Menu */
+/* ----------------------------MENU */
 
 #boton{
     border-style: none;
@@ -73,7 +74,7 @@
 
 }
 
-        /* Galeria */
+/*-------------------------------GALERIA */
 
 section h2{
     text-align: center;
@@ -87,32 +88,125 @@ section h2{
 
 }
 
-img{
+#galeria .primavera .destrozos .diario{
 
-    height: 100%;
-    width: 42%;
+    padding: 1em 0em;
+    
+
+}
+
+/* destrozos */
+.destrozos{
+    width: 50%;
+}
+
+#galeria .destrozos img{
+
+    height: 96%;
+    width: 89%;
     padding: 1em;
     margin: auto;
 
 }
-
-#galeria img:hover{
-    /* aumento las imagenes cuando esta el raton encima */
-    transition: 1s;
-    width: 47%;
-    height: 100%;
+#galeria .destrozos p{
+    height: 22%;
+    width: 41%;
+    z-index: -1;
+    position: absolute;
+    color: rgb(249 249 249);
+    background-color: #454242;
+    padding: 1.5em 0.2em 7.6em 0.4em;
+    margin: 0.8em 0.8em 0.3em 0.8em;
 }
 
-/* pie de pagina */
+#galeria .destrozos img:hover{
+    opacity: 0;
+    transition: 1s;
+
+}
+/* En primavera */
+.primavera{
+    width: 50%;
+}
+
+#galeria .primavera img{
+
+    height: 96%;
+    width: 89%;
+    padding: 1em;
+    margin: auto;
+
+}
+#galeria .primavera p{
+    height: 22%;
+    width: 41%;
+    z-index: -1;
+    position: absolute;
+    color: rgb(249 249 249);
+    background-color: #454242;
+    padding: 1.5em 0.2em 8.5em 0.4em;
+    margin: 0.8em 0.8em 0.3em 0.8em;
+}
+
+
+#galeria .primavera img:hover{
+    opacity: 0;
+    transition: 1s;
+
+}
+
+/* Diario de todo */
+
+#galeria .primavera .destrozos .diario{
+
+    padding: 1em 0em;
+    
+
+}
+
+.diario{
+    width: 50%;
+}
+
+#galeria .diario img{
+
+    height: 96%;
+    width: 89%;
+    padding: 1em;
+    margin: auto;
+
+}
+#galeria .diario p{
+    height: 22%;
+    width: 41%;
+    z-index: -1;
+    position: absolute;
+    color: rgb(249 249 249);
+    background-color: #454242;
+    padding: 1.5em 0.2em 8.5em 0.4em;
+    margin: 0.8em 0.8em 0.3em 0.8em;
+}
+
+
+#galeria .diario img:hover{
+    opacity: 0;
+    transition: 1s;
+
+}
+
+
+/*----------------PIE DE PAGINA */
 
 footer{
     padding: 2em;
     background: rgb(38, 38, 39);
+    margin-top: 5em;
 }
 footer p{
     color: #fff;
     font-size: 0.8em;
     margin-bottom: 0em;
+
 }
 
 #iconos{
@@ -120,24 +214,27 @@ footer p{
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    bottom: 1em;
+    bottom: 0.5em;
+}
+
+#footer div{
+text-align: center;
 }
 
 .redes{
 
     position: relative;
-    top: 3.5em;
-    height: 100%;
-    width: 15%;
+    height: 40%;
+    width: 41%;
+    top: 1.6em;
 }
 
 #iconos a {
     color: rgb(255, 255, 255);
-    position: relative;
     bottom: 5em;
 }
 
-/* PAGINA QUIEN SOY */
+/* *************************************PAGINA QUIEN SOY ***************************************/
 
 #cuerpo{
     display: flex;
@@ -171,7 +268,7 @@ footer p{
 }
 
 
-/* PAGINA CONTACTOS */
+/* ******************************************PAGINA CONTACTOS********************************** */
 
 
 #textarea{
