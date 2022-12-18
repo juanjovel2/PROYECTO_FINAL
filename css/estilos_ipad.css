@@ -1,6 +1,6 @@
 /*  Hoja de estilos para ipad */
 
-@media screen and (min-width: 760px) and (max-width: 1425px) {
+@media screen and (min-width: 760px) and (max-width: 1270px) {
 /* REGLAS GENERALES */
 
 @font-face {
@@ -36,17 +36,27 @@
             font-size: 2rem
         }
         
-        a {
+        #desplegable a {
             text-decoration: none;
             color: rgb(255, 255, 255);
+            background-image: url("../recursos/imagenes/tachon_ipad.png");
+            background-repeat: no-repeat;
+            
         }
+
+        a{
+            text-decoration: none;
+            padding: 1rem;
+        }
+
 
 /* ---------------------------CABECERA*/
 #cabecera{
-    background-image: url("../recursos/imagenes/cabecera.png");
+    background-image: url("../recursos/imagenes/cabecera_2.png");
     opacity: 0.9;
     display: flex;
     flex-direction: column;
+    background-repeat: no-repeat;
 
 }
 
@@ -70,7 +80,7 @@
 
 #desplegable a:hover{
     color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
+
 
 }
 
@@ -144,8 +154,8 @@ section h2{
     position: absolute;
     color: rgb(249 249 249);
     background-color: #454242;
-    padding: 1.5em 0.2em 8.5em 0.4em;
-    margin: 0.8em 0.8em 0.3em 0.8em;
+    padding: 1em 0.2em 5.8em 0.4em;
+    margin: 0.8em 0.8em 0.7em 0.8em;
 }
 
 
@@ -253,11 +263,14 @@ text-align: center;
 }
 
 #derecha_foto{
+    display: flex;
     height: 100%;
     width: 96%;
     padding: 1rem;
     margin: auto;
-    margin-bottom: 47em;
+    margin-bottom: 23em;
+    flex-direction: column;
+    flex-wrap: nowrap;
 
 }
 #derecha_foto img{
@@ -290,18 +303,26 @@ text-align: center;
         border-bottom-width: 0.1em;
     }
     
-    #derecha{
-        padding: 1rem;
-        margin: auto;
-        text-align: justify;
     
-    }
-    
-    #derecha p{
+    #derecha span{
         font-size: 1em;
         margin-bottom: 0em;
         margin-top: 0.2em;
     }
-    
+    #derecha{
+        font-size: 1em;
+        margin-bottom: 0em;
+        margin-top: 0.2em;
+        padding: 1rem;
+        text-align: justify;
+    }
+    #iconos_derecha img{
+        top: 0.8em;
+        margin: 0.2em;
+        width: 2em;
+        position: relative;
+        height: 2em;
+
+}
 
 }

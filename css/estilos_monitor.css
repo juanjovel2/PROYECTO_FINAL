@@ -1,6 +1,6 @@
 /*  Hoja de estilos para ipad */
 
-@media screen and (min-width: 1426px) {
+@media screen and (min-width: 1270px) {
 
     /* reglas generales */
     
@@ -37,20 +37,33 @@
                 font-size: 2rem
             }
             
-            a {
+            #desplegable a {
                 text-decoration: none;
                 padding: 1rem;
                 color: rgb(255, 255, 255);
+                background-image: url("../recursos/imagenes/tachon_escritorio_6.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            a{
+                text-decoration: none;
+            }
+
+            H4{
+                padding-bottom: 1em;
             }
     
-    /* cabecera*/
+    
+/* ---------------------------CABECERA*/
     #cabecera{
     
         background-image: url("../recursos/imagenes/cabecera.png");
         opacity: 0.9;
+        background-repeat: no-repeat;
     }
     
-    /* Menu */
+/* ----------------------------MENU */
     
     #boton{
         border-style: none;
@@ -75,66 +88,149 @@
     
    #desplegable a:hover{
         color: rgb(0, 0, 0);
-        background-color: rgb(255, 255, 255);
     
     }
     
      
-            /* Galeria */
+/*-------------------------------GALERIA */
 
-    section h2{
-        text-align: center;
-        margin: 0.5em;
-        font-family: titulos;
-    }
-    
-    #galeria{
-        display: flex;
-        flex-wrap: wrap;
-        padding-bottom: 1em;
+section h2{
+    text-align: center;
+    margin: 0.8em;
+    font-family: titulos;
+}
 
+#galeria{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#galeria .primavera .destrozos .diario{
+
+    padding: 1em 0em;
     
-    }
-    
-    img{
-    
-        height: 100%;
-        width: 30%;
-        padding: 1em 0.2em 0.1em 0.2em;
-        margin: auto;
-    
-    }
-#galeria p{
-    position: absolute;
+
+}
+
+/* destrozos */
+.destrozos{
+    width: 33.3%;
+}
+
+#galeria .destrozos img{
+
+    height: 96%;
+    width: 89%;
+    padding: 1em;
+    margin: auto;
+
+}
+#galeria .destrozos p{
+    font-size: 1em;
+    height: 15%;
+    width: 22%;
     z-index: -1;
-    width: 30%;
-    padding: 1em 0.2em 0.1em 1.2em;
-    margin-top: 13em;
-   
+    position: absolute;
+    color: rgb(249 249 249);
+    background-color: #454242;
+    padding: 0.7em 3.9em 9.5em 0.4em;
+    margin: 1.2em 1em 1em 1.2em;
 }
- #galeria img:hover{
-    /* aumento las imagenes cuando esta el raton encima */
-    position: relative;
-    opacity: 0.07;
+
+#galeria .destrozos img:hover{
+    opacity: 0;
     transition: 1s;
-    width: 35%;
-    height: 100%;
-    background-color: rgb(53, 53, 52);
+
 }
-    /* pie de pagina */
+/* En primavera */
+.primavera{
+    width: 33.3%;
+}
+
+#galeria .primavera img{
+
+    height: 96%;
+    width: 89%;
+    padding: 1em;
+    margin: auto;
+
+}
+#galeria .primavera p{
+    font-size: 1em;
+    height: 15%;
+    width: 22%;
+    z-index: -1;
+    position: absolute;
+    color: rgb(249 249 249);
+    background-color: #454242;
+    padding: 0.7em 4em 7em 0.4em;
+    margin: 1.2em 1em 1em 1.2em;
+}
+
+#galeria .primavera img:hover{
+    opacity: 0;
+    transition: 1s;
+
+}
+
+/* Diario de todo */
+
+.diario{
+    width: 33.3%;
+}
+
+#galeria .diario img{
+
+    height: 96%;
+    width: 89%;
+    padding: 1em;
+    margin: auto;
+
+}
+#galeria .diario p{
+    font-size: 1em;
+    height: 15%;
+    width: 22%;
+    z-index: -1;
+    position: absolute;
+    color: rgb(249 249 249);
+    background-color: #454242;
+    padding: 0.7em 3.9em 10.4em 0.4em;
+    margin: 1.2em 1em 1em 1.2em;
+}
+
+#galeria .diario img:hover{
+    opacity: 0;
+    transition: 1s;
+
+}
+
+
+/*----------------PIE DE PAGINA */
 
     footer{
         padding: 2em;
         background: rgb(38, 38, 39);
+        margin-top: 5em;
     }
     footer p{
         color: #fff;
         font-size: 0.8em;
         margin-bottom: 0em;
+        margin-bottom: 2em;
+        margin-top: 1em;
     }
     #iconos{
         position: relative;
         bottom: 1em;
+        margin-top: 2em;
+    }
+
+    #iconos a{
+        position: relative;
+        bottom: 1em;
+        margin:1em;
     }
     
     .redes{
@@ -142,14 +238,16 @@
         position: relative;
         top: 0.8em;
         height: 100%;
-        width: 2.5%;
+        width: 3.5%;
+        right: 0.8em;
     }
     
     #iconos a {
         color:rgb(255, 255, 255);
     }
+    
 
-/* PAGINA QUIEN SOY */
+/* *************************************PAGINA QUIEN SOY ***************************************/
 #cuerpo{
     display: flex;
     flex-direction: row;
@@ -180,7 +278,8 @@
     margin-top: 4em;
 }
     
-    /* PAGINA CONTACTOS */
+/* ******************************************PAGINA CONTACTOS********************************** */
+
 
 #caja_contactos{
     padding: 1em;
@@ -205,18 +304,26 @@
     margin-top: 0.2em;
     }
     
-    
-    #derecha{
-        margin-top: 9em;
-        padding: 1rem;
-        margin-right: 0em;
-        text-align: justify;
-    }
-    
-    #derecha p{
+    #derecha span{
         font-size: 1em;
         margin-bottom: 0em;
         margin-top: 0.2em;
     }
+    #derecha{
+        font-size: 1em;
+        margin-bottom: 0em;
+        margin-top: 9.2em;
+        padding: 1em;
+        text-align: justify;
+    }
+    #iconos_derecha img{
+        top: 0.8em;
+        margin: 0.2em;
+        width: 2em;
+        position: relative;
+        height: 2em;
 
 }
+    }
+    
+
