@@ -128,7 +128,7 @@ section h2{
 }
 #galeria .destrozos p{
     font-size: 1em;
-    height: 18%;
+    height: 20%;
     width: 18%;
     z-index: -1;
     position: absolute;
@@ -158,7 +158,7 @@ section h2{
 }
 #galeria .primavera p{
     font-size: 1em;
-    height: 19%;
+    height: 20%;
     width: 18%;
     z-index: -1;
     position: absolute;
@@ -190,7 +190,7 @@ section h2{
 }
 #galeria .diario p{
     font-size: 1em;
-    height: 18%;
+    height: 20%;
     width: 18.3%;
     z-index: -1;
     position: absolute;
@@ -267,15 +267,15 @@ section h2{
     height: 100%;
     width: 96%;
     padding: 1rem;
-    margin: auto;
-    margin-bottom: 47em;
+    margin-bottom: 6em;
+    margin-top: 5em;
 
 }
 #derecha_foto img{
     height: 100%;
     width: 100%;
     padding: 1em;
-    margin-top: 4em;
+    
 }
     
 /* ******************************************PAGINA CONTACTOS********************************** */
