@@ -37,7 +37,7 @@
                 font-size: 2rem
             }
             
-            #desplegable a {
+            .no_desplegar a {
                 text-decoration: none;
                 padding: 1rem;
                 color: rgb(255, 255, 255);
@@ -62,7 +62,9 @@
         opacity: 0.9;
         background-repeat: no-repeat;
     }
-    
+    #icono_menu img{
+        display: none;
+    }
 /* ----------------------------MENU */
     
     #boton{
@@ -75,18 +77,18 @@
         padding: 2rem;
     }
 
-    #desplegable{
+    .no_desplegar{
         text-align: center;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
     }
 
-    #desplegable a:visited{
+    .no_desplegar a:visited{
         color: rgb(255, 255, 255);
     }
     
-   #desplegable a:hover{
+   .no_desplegar a:hover{
         color: rgb(0, 0, 0);
     
     }
@@ -134,7 +136,7 @@ section h2{
     position: absolute;
     color: rgb(249 249 249);
     background-color: #454242;
-    padding: 0.7em 3.9em 9.5em 0.4em;
+    padding: 0.7em 3.9em 9em 0.4em;
     margin: 1.2em 1em 1em 1.2em;
 }
 
@@ -164,7 +166,7 @@ section h2{
     position: absolute;
     color: rgb(249 249 249);
     background-color: #454242;
-    padding: 0.7em 4em 7em 0.4em;
+    padding: 0.7em 4em 6.5em 0.4em;
     margin: 1.2em 1em 1em 1.2em;
 }
 
@@ -196,7 +198,7 @@ section h2{
     position: absolute;
     color: rgb(249 249 249);
     background-color: #454242;
-    padding: 0.7em 3.9em 10.4em 0.4em;
+    padding: 0.7em 3.9em 9.8em 0.4em;
     margin: 1.2em 1em 1em 1.2em;
 }
 
@@ -290,7 +292,7 @@ section h2{
 }
 
 #izquierda{
-    margin-bottom: 10em;
+    
     position: relative;
     padding: 1em;
     margin-right: 0em;
@@ -299,7 +301,12 @@ section h2{
     background-color: rgb(196, 196, 196);
 }
 
-
+.casilla_error{
+    margin-bottom: 10em;
+    margin-right: 5em;
+    margin-left: 18em;
+    background-color: red; color:#fff
+}
 #textarea{
     margin-top: 0.2em;
     }
