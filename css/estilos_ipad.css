@@ -36,11 +36,12 @@
             font-size: 2rem
         }
         
-        #desplegable a {
+        .desplegar a {
             text-decoration: none;
             color: rgb(255, 255, 255);
             background-image: url("../recursos/imagenes/tachon_ipad.png");
             background-repeat: no-repeat;
+           
             
         }
 
@@ -57,7 +58,16 @@
     display: flex;
     flex-direction: column;
     background-repeat: no-repeat;
+    background-size: cover;
 
+}
+
+#icono_menu img{
+    height: 2em;
+    width: 2em;
+    margin-left: 28em;
+    margin-top: 1em;
+    padding: 1em;
 }
 
 /* ----------------------------MENU */
@@ -68,17 +78,27 @@
     background-color: transparent;
 }
 
-#desplegable{
+.no_desplegar{
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: visibility .3s ease-in-out,opacity .5s linear,height .5s linear;
+}
+
+.desplegar{
+    visibility: visible;
+    opacity: 1;
+    height: auto;
     text-align: center;
     display: flex;
     flex-direction: column;
 }
 
-#desplegable a:visited{
+.desplegar a:visited{
     color: rgb(255, 255, 255);
 }
 
-#desplegable a:hover{
+.desplegar a:hover{
     color: rgb(0, 0, 0);
 
 
@@ -104,6 +124,56 @@ section h2{
     
 
 }
+/*div para agrandar la imagen*/
+.agrandar {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+
+}
+/*tamaaño de la imagen grande*/
+.tamaño_grande {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/*div debajo de la clase*/
+#subtitulo {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        padding: 10px 0;
+        height: 150px;
+
+}
+.cerrar:hover, .cerrar:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+.cerrar {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
 
 /* destrozos */
 .destrozos{
@@ -125,8 +195,8 @@ section h2{
     position: absolute;
     color: rgb(249 249 249);
     background-color: #454242;
-    padding: 1.5em 0.2em 7.6em 0.4em;
-    margin: 0.8em 0.8em 0.3em 0.8em;
+    padding: 1.5em 0.4em 8em 0em;
+    margin: 0.8em 0.8em 0.3em 1.4em;
 }
 
 #galeria .destrozos img:hover{
@@ -154,8 +224,8 @@ section h2{
     position: absolute;
     color: rgb(249 249 249);
     background-color: #454242;
-    padding: 1em 0.2em 5.8em 0.4em;
-    margin: 0.8em 0.8em 0.7em 0.8em;
+    padding: 1.5em 0.4em 5.5em 0em;
+    margin: 0.8em 0.8em 0.3em 1.4em
 }
 
 
@@ -193,8 +263,8 @@ section h2{
     position: absolute;
     color: rgb(249 249 249);
     background-color: #454242;
-    padding: 1.5em 0.2em 8.5em 0.4em;
-    margin: 0.8em 0.8em 0.3em 0.8em;
+    padding: 1.5em 0.4em 8.5em 0em;
+    margin: 0.8em 0.8em 0.3em 1.4em
 }
 
 
@@ -302,7 +372,11 @@ text-align: center;
         border-bottom-style: solid;
         border-bottom-width: 0.1em;
     }
-    
+    .casilla_error{
+        margin-top: 1em;
+        margin-bottom: 10em;
+        background-color: red; color:#fff
+    }
     
     #derecha span{
         font-size: 1em;

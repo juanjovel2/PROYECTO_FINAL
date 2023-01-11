@@ -17,68 +17,83 @@
 
         <!-- menu -->
         <div id="cabecera">
+            <div id="icono_menu">
+                <img src="recursos/icono/barras.svg">
+            </div>
             <div id="menu">
-                <nav id="desplegable">
+                <nav class="no_desplegar" >
                     <a href="index.html"><h4>Destrozos</h4></a>
                     <a href="diario_de_todo.html"><h4>Diario de todo</h4></a>
                     <a href="en_primavera.html"><h4>Sol en primavera</h4></a>
                     <a href="quien_soy.html"><h4>¿Quién soy?</h4></a>
                     <a href="contacto.html"><h4>Contacto</h4></a>
-                    </nav>
-                </div>
+                </nav>
             </div>
-<!-- cuerpo -->
-            <section id="section_contactos">
+        </div>
+        <!-- cuerpo -->
+        <section id="section_contactos">
             <h2>Contacto</h2>
 
             <div id="caja_contactos">
-            
-            <div id="izquierda">
-                <label for="Nombre"><strong>Nombre y Apellidos</strong></label><br>
-                <input type="texto" id="nombre" name="nombre"
-                    placeholder="Nombre y apellidos" autofocus required><br>
-                <label for="telefono"><strong>Teléfono</strong></label><br>
-                <input type="text" id="telefono" name="telefono"
-                    placeholder="Teléfono" required><br>
+      
+        <!-- formulario -->
+                <div id="izquierda">
+                <form action="" method="post" name="formulario" id="formulario">
 
-                <label for="correo"><strong>Email</strong></label><br>
-                <input type="text" id="correo" name="correo" placeholder="email"
-                    required><br>
+                    <label for="Nombre"><strong>Nombre y Apellidos</strong></label><br>
+                    <input type="texto" id="nombre" name="nombre"
+                        placeholder="Nombre y apellidos" autofocus ><br>
 
-                <label><strong>¿Que necesitas?</strong></label>
-                <p id="textarea"><textarea rows="4" cols="40" placeholder="------"></textarea></p>
-                
-                <input type="submit" id="envia" value="Enviar!">
-                <input type="reset" id="cancela" name="reset" value="Borrar datos">
-            </div>
-            <div id="derecha">
-            <spam><strong>Formas de contactarme:</strong> </spam>
-            <div id = "iconos_derecha">
-            <img  src="recursos/icono/phone-solid.svg"><span>MÓVIL:xxxxxxxxxx</span><br>
-            <img  src="recursos/icono/tty-solid.svg"><span>FIJO:xxxxxxxxxx</span><br>
-            <img  src="recursos/icono/envelope-regular.svg"><span>EMAIL:xxxxxxxxxx</span><br>
-            </div>
-            </div>
+                    <label for="telefono"><strong>Teléfono</strong></label><br>
+                    <input type="text" id="telefono" name="telefono"
+                        placeholder="Teléfono"><br>
 
-            </div>
-            </section>
+                    <label for="correo"><strong>Email</strong></label><br>
+                    <input type="text" id="correo" name="correo"
+                        placeholder="email" 
+                    ><br>
 
-                <!-- pie de pagina -->
+                    <label><strong>¿Que necesitas?</strong></label>
+                    <p ><textarea rows="4" id="textarea" cols="40"
+                            placeholder="------"></textarea></p>
 
-            <footer>
-                <p>Puedes seguir mis trabajos en: <br>
-                    REDES SOCIALES</p>
-                <div id="iconos">
+                    <input type="submit" id="envia" value="Enviar!" >
 
-                    <a href="https://www.instagram.com/verlassco/?hl=es"><img class="redes" src="recursos/icono/instagram.svg">@verlasco</a>
-
-                    <a href="https://www.instagram.com/verlassco/?hl=es"><img class="redes" src="recursos/icono/youtube.svg">xxxxxxxxxx</a>
-
-                    <a href="https://www.instagram.com/verlassco/?hl=es"><img class="redes" src="recursos/icono/twitter.svg">xxxxxxxxxx</a>
+                    <input type="reset" id="cancela" name="reset" value="Borrar datos">
+                    </form>
                 </div>
+        <!-- contacto -->
+                <div id="derecha">
+                    <spam><strong>Formas de contactarme:</strong> </spam>
+                    <div id="iconos_derecha">
+                        <img src="recursos/icono/phone-solid.svg"><span>MÓVIL:xxxxxxxxxx</span><br>
+                        <img src="recursos/icono/tty-solid.svg"><span>FIJO:xxxxxxxxxx</span><br>
+                        <img src="recursos/icono/envelope-regular.svg"><span>EMAIL:xxxxxxxxxx</span><br>
+                    </div>
+                </div>  
+            </div>
+         <!-- mensajes de error -->
+         <div class="casilla_error">
+         </div>
+        </section>
 
-            </footer>
+        <!-- pie de pagina -->
+
+        <footer>
+            <p>Puedes seguir mis trabajos en: <br>
+                REDES SOCIALES</p>
+            <div id="iconos">
+
+                <a href="https://www.instagram.com/verlassco/?hl=es"><img
+                        class="redes" src="recursos/icono/instagram.svg">@verlasco</a>
+                <a href="https://www.instagram.com/verlassco/?hl=es"><img
+                        class="redes" src="recursos/icono/youtube.svg">xxxxxxxxxx</a>
+                <a href="https://www.instagram.com/verlassco/?hl=es"><img
+                        class="redes" src="recursos/icono/twitter.svg">xxxxxxxxxx</a>
+            </div>
+
+        </footer>
 
 
-
-        </body>
+        <script src="js/general_java.js"></script>
+    </body>
