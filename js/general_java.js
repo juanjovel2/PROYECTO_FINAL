@@ -35,6 +35,85 @@ function validarFormulario(evento) {
 
 evento.preventDefault();
 
+
+//casilla para escribir el mns de error
+var persona = document.getElementsByClassName("casilla_error")[0]; 
+
+// COMPROBAR QUE MINIMO TIENE 4 CARACTERES
+
+let  palabra = document.getElementById("nombre").value;
+let letras = /^[A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]{3}$/;
+
+
+if(palabra == ""){
+  persona.innerHTML = '*El campo "Nombre y Apellidos" esta vacio ';
+  return false;
+}else{
+
+if(letras.test(palabra) ){
+ persona.innerHTML = "";
+
+}else{
+  
+persona.innerHTML = '* El campo "Nombre y Apellidos" no contiene el formato correcto, debe empezar por mayúscula y contener 4 digitos como mínimo';
+return false;
+  //sale
+ }
+}
+
+// COMPROBAR LA EXPRESION REGULAR TELEFONO
+let numero = document.getElementById("telefono").value;
+let formato = /^[9|6|7][0-9]{8}$/;
+
+if(numero == ""){
+  persona.innerHTML = "*El campo Teléfono esta vacio ";
+  return false;
+
+} else {
+
+if(formato.test(numero) ){
+ persona.innerHTML = "";
+
+}else{
+
+persona.innerHTML = 'El campo "Teléfono" no contiene el formato correcto, debe contener 6 digitos y empezar por 6 o 7';
+return false;
+  //sale
+}
+
+// COMPROBAR LA EXPRESION REGULAR CORREO
+ 
+    let correo = document.getElementById("correo").value;
+    let escala = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
+
+
+    if(correo == ""){
+      persona.innerHTML = '*El campo "Email" esta vacio ';
+      return false;
+    
+    } else {
+    
+    if(escala.test(correo) ){
+     persona.innerHTML = "";
+    
+    }else{
+    
+    persona.innerHTML = 'El campo "Email" no contiene el formato correcto';
+    return false;
+      //sale
+    }
+  }
+  
+// COMPROBAR QUE MINIMO TIENE 400 CARACTERES
+
+let  tex = document.getElementById("textarea").value;
+
+if(tex.length >400){
+  var area = document.getElementsByClassName("casilla_error")[0];
+  area.innerHTML = '* Has sobrepasado los caracteres permitidos en la casilla "¿Que necesitas?"';;
+  return false;
+}
+
   
 //-------RELLENA TODOS LOS CAMPOS
 
@@ -57,81 +136,5 @@ evento.preventDefault();
       document.formulario.submit()
   
     }
-
-// COMPROBAR QUE MINIMO TIENE 4 CARACTERES
-  
-let  palabra = document.getElementById("nombre").value;
-if(palabra.length ==0){
-  return false;
-}else{
-if(palabra.length <4){
-  var persona = document.getElementsByClassName("casilla_error")[0];
-  persona.innerHTML = "* Nombre y Apellidos incorrectos: 4 caracteres minimo";
-  return false;
-  //sale
- }
 }
-
-// COMPROBAR LA EXPRESION REGULAR TELEFONO
-let numero = document.getElementById("telefono").value;
-let formato = /^[9|6|7][0-9]{8}$/;
-
-if (formato.test(numero)) {
-  var numericos = document.getElementsByClassName("casilla_error")[0];
-  numericos.innerHTML = ""
-} else {
-  var numericos = document.getElementsByClassName("casilla_error")[0];
-  numericos.innerHTML = "* Telefono incorrecto";
-  return false;
 }
-
-// COMPROBAR LA EXPRESION REGULAR CORREO
- 
-    let correo = document.getElementById("correo").value;
-    let escala = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
-
-    if (escala.test(correo)) {
-      var sobre = document.getElementsByClassName("casilla_error")[0];
-      sobre.innerHTML = "";  
-    } else {
-      var sobre = document.getElementsByClassName("casilla_error")[0];
-      sobre.innerHTML = "* Correo incorrecto";
-      return false;
-    }
-  
-// COMPROBAR QUE MINIMO TIENE 400 CARACTERES
-
-let  tex = document.getElementById("textarea").value;
-
-if(tex.length >400){
-  var area = document.getElementsByClassName("casilla_error")[0];
-  area.innerHTML = "* Has sobrepasado los caracteres permitidos en la casilla ¿Que necesitas?";;
-  return false;
-}
-
-
-
-}
-
-// //SCRIPT EXTERNO (AGRANDAR IMAGEN)
-
-// // Obtener el ventana grande
-// var modal = document.getElementById("ventana");
-
-// // // Obtenga la imagen e insértela dentro de la ventana grande
-// var img = document.getElementById("imagen_chica");
-// var modalImg = document.getElementById("imagen_grande");
-// var captionText = document.getElementById("subtitulo");
-// img.onclick = function(){
-//   modal.style.display = "block";
-//   modalImg.src = this.src;
-//   captionText.innerHTML = this.alt;
-// }
-
-// // Obtener el elemento <span> que cierra la ventana grande
-// var span = document.getElementsByClassName("cerrar")[0];
-
-// // Cuando el usuario hace clic en <span> (x), cierra el modal
-// span.onclick = function() { 
-//   modal.style.display = "none";
-// }
